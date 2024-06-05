@@ -1,6 +1,7 @@
-import java.util.Arrays;
 
-public class ReverseOfArray {
+    import java.util.Arrays;
+
+    public class ReverseOfArray {
         public static void main(String[] args) {
             int[] arr = {1,3,23,9,18};
             reverse(arr);
