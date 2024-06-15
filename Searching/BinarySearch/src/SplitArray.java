@@ -1,8 +1,8 @@
 public class SplitArray {
     public static void main(String[] args) {
-       int[] arr={7,2,5,10,8};
-       int m=2;
-       int ans=splitArray(arr,m);
+        int[] arr={7,2,5,10,8};
+        int m=2;
+        int ans=splitArray(arr,m);
         System.out.println(ans);
 
     }
@@ -35,6 +35,6 @@ public class SplitArray {
             }
         }
 
-            return end;
+        return end;
     }
 }

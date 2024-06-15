@@ -1,7 +1,7 @@
 public class RotatedBS {
     public static void main(String[] args) {
-      int[] arr={8,9,10,3,4,5};
-      int ans=search(arr,6);
+        int[] arr={8,9,10,3,4,5};
+        int ans=search(arr,6);
         System.out.println(ans);
     }
 
@@ -9,7 +9,7 @@ public class RotatedBS {
         int pivot=findPivot(nums);
 
         if(pivot==-1){
-           return binarysearch(nums,target,0,nums.length-1);
+            return binarysearch(nums,target,0,nums.length-1);
         }
         if(nums[pivot]==target){
             return pivot;

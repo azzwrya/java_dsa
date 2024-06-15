@@ -1,14 +1,17 @@
-public class BinarySearch {
+public class Ceiling {
     public static void main(String[] args) {
         int[] arr={-18,-12,-4,0,2,3,4,15,16,18,22,45,89};
-        int target =18;
-        int ans=binarysearch(arr,target);
+        int target =19;
+        int ans=ceiling(arr,target);
         System.out.println(ans);
     }
 
-    static int binarysearch(int[] arr,int target){
+    static int ceiling(int[] arr,int target){
         int start =0;
         int end=arr.length-1;
+        if (target>arr[arr.length-1]){
+            return -1;
+        }
         while(start<=end){
             int mid=start+(end-start)/2;
             if(target<arr[mid]){
@@ -22,6 +25,6 @@ public class BinarySearch {
                 return mid;
             }
         }
-        return -1;
+        return start;
     }
 }

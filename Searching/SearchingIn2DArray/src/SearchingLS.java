@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class SearchIn2dArray {
+public class SearchingLS {
     public static void main(String[] args) {
         int[][] arr= {
                 {23, 4, 1},
@@ -11,9 +11,9 @@ public class SearchIn2dArray {
         int target= 34;
         int[] ans=search(arr,target);
         System.out.println(Arrays.toString(ans));
-        }
+    }
 
-        static int[] search(int[][] arr,int target){
+    static int[] search(int[][] arr,int target){
         for(int row=0;row<arr.length;row++){
             for(int col=0;col<arr[row].length;col++){
                 if(arr[row][col]==target){
